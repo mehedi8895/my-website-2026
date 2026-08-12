@@ -26,8 +26,5 @@ export type Message = {
   sender_id: string;
   body: string;
   created_at: string;
-  sender?: Pick<
-    Profile,
-    "name" | "username" | "avatar_url"
-  >;
+  sender?: Pick<Profile, "name" | "username" | "avatar_url"> | null;
 };
